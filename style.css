@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    line-height: 120%;
+}
+html {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+section {
+    padding: 80px 0;
+}
+
+/*------ tai nguyen tai su dung--------*/
+.box {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*----- colors ----------------------
+background-color: rgba(222,222,222,0.41);
+color: rgba(0,0,0,0.6);
+
+
+/*--------------------------------------*/
+/*--------------------------------------*/
+
+
+/*--------style cho cau nhan thong bao dau tien------*/
+.alert-message {
+    font-size: 75%;
+    padding: 20px;
+    text-align: center;
+}
+.alert-message a {
+    color: black;
+}
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+
+
+/*---------style logo, thanh dieu huong chinh va icon ---------*/
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("public/images/886866.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.content-box {
+    display: flex;
+}
+
+
+/*-----style cho logo------*/
+.logo {
+    width: 10%;
+    padding-top: 1%;
+}
+.logo p {
+    font-size: 70%;
+    color: white;
+    padding: 8px 0;
+}
+
+
+/*-------style chung cho nhom icon--------*/
+.icon-on-navigation-bar {
+    width: 10%;
+}
+.icon-on-navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0,0,0,0.5);
+    padding-top: 1%;
+}
+
+
+/*-----style cho nhom icon globe va sort down-----*/
+.group-icon-1 {
+    font-size: 70%;
+    width: 60px;
+    padding: 14px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+.group-icon-1 .fa-globe {
+    margin-right: 5px;
+}
+.group-icon-1:hover {
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 40px;
+
+}
+
+
+/*-------style cho nhom icon, bars menu va user circle-------*/
+.group-icon-2 .fa-bars {
+    font-size: 70%;
+    margin-right: 10px;
+    color: black;
+}
+.group-icon-2 .fa-user-circle {
+    font-size: 150%;
+    color: gray;
+}
+.group-icon-2 {
+    width: 75px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+/*------------------------------------------------------*/
+/*-----------------------------------------------------*/
+
+
+
+/*------style cho thanh dieu huong--------*/
+.navigation-bar {
+    width: 80%;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-nav li {
+    display: inline-block;
+    padding: 2% 2% 0 0;
+}
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 80%;
+    padding: 8px 0;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+.main-nav li a:after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+.main-nav li a:hover:after {
+    transform: scaleX(1);
+}
+
+/*------------------------------------------------*/
+/*-----------------------------------------------*/
+
+
+
+/*----style cho hop tim kiem-----*/
+.finding-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.hop-tim-kiem {
+    background-color: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    position: relative;
+}
+.hop-tim-kiem div:first-child {
+    padding-left: 30px;
+}
+.hop-tim-kiem div:nth-child(4) {
+    border-right: none;
+}
+.select-box {
+    padding: 10px;
+    cursor: pointer;
+}
+/*-------------tao thanh chan doc------------*/
+.select-box:after {
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 50%;
+    background-color: rgba(0,0,0,0.3);
+    top: 25%;
+}
+.select-box:nth-child(4):after {
+    background-color: rgba(0,0,0,0);
+    content: " ";
+}
+
+/*---------- style cac box input---------*/
+.select-box p {
+    font-size: 60%;
+    letter-spacing: 1px;
+}
+.select-box input[type="text"] {
+    width: 120px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(0,0,0,0.4);
+}
+.hop-tim-kiem div:first-child input[type="text"]{
+    width: 250px;
+}
+
+/*----------style cho search icon trong hop tim kiem-------------*/
+.search-icon {
+    color: white;
+    background-color: rgba(255,24,92,0.84);
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.search-icon .fa-search {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.search-icon i:hover {
+    background-color: rgba(255,24,92,1);
+}
+/*------------------------------------------------*/
+/*------------------------------------------------*/
+
+/*----- style cho hop tim kiem thay the khi responsive-------*/
+.hop-tim-kiem-thay-the {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 20px;
+}
+.hop-tim-kiem-thay-the i {
+    padding: 10px 20px;
+    color: rgba(0,0,0,.6);
+    vertical-align: middle;
+}
+.hop-tim-kiem-thay-the input {
+    font-size: 80%;
+    color: rgba(0,0,0,0.4);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.hop-tim-kiem-thay-the {
+    display: none;
+    /*visibility: hidden;*/
+}
+
+
+/*------ style cho main heading, button kham pha va clock------*/
+.heading-and-clock {
+    display: flex;
+}
+.main-heading {
+    margin-top: 100px;
+}
+.main-heading h1 {
+    font-size: 180%;
+    width: 40%;
+}
+.main-heading p {
+    font-size: 70%;
+    margin: 20px 0;
+}
+.main-heading a {
+    padding: 10px;
+    font-size: 80%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.main-heading a:hover {
+    background-color: rgba(255,255,255,0.4);
+}
+/*---------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+
+/*------------- style cho section three-boxes--------------*/
+.three-boxes {
+    display: flex;
+}
+.plan-box h4 {
+    padding: 10px 0 0 20px;
+    color: rgba(0,0,0,0.6);
+}
+.plan-box p {
+    padding: 0 0 20px 20px;
+    color: rgba(0,0,0,0.6);
+    font-size: 70%;
+}
+.plan-box {
+    position: relative;
+    width: 50%;
+    border-radius: 20px;
+    margin: 0 1%;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+.plan-box img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+
+/*----------- style cho trai nghiem truc tuyen section ---------*/
+.trai-nghiem-truc-tuyen {
+    background-color: black;
+}
+.trai-nghiem-and-kham-pha {
+    display: flex;
+    margin-bottom: 20px;
+}
+.trai-nghiem-and-kham-pha div:first-child,
+.trai-nghiem-and-kham-pha div:last-child{
+    width: 50%;
+}
+.trai-nghiem-and-kham-pha p {
+    margin-top: 20px;
+    font-size: 70%;
+}
+.trai-nghiem-and-kham-pha a {
+    padding: 7px 15px;
+    font-size: 60%;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    border: 1px solid white;
+    float: right;
+}
+
+.trai-nghiem-and-kham-pha a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
+
+/*------ style cho phan four boxes with pictures--------*/
+.four-boxes {
+    display: flex;
+}
+/*------ chia layout hien thi cua image-1-2-3 thanh cot va co chieu rong = 50% cua four-boxes----*/
+.group-image-2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+/*------ image-1 co chieu rong = 50% cua four-boxes ----*/
+.image-1 {
+    width: 50%;
+}
+/*--- chia layout cua image-2-3 -------*/
+.group-image-3 {
+    display: flex;
+    margin-bottom: 20px;
+}
+/*--- tao spacing giua cac image -----*/
+.image-1, .image-2
+ {
+    margin-right: 20px;
+    position: relative;
+}
+.image-3,.image-4 {position: relative}
+
+/*---- set vi tri va cac thuoc tinh cua div chua paragraphs-------*/
+.image-1 div:last-child,
+.image-2 div:last-child,
+.image-3 div:last-child,
+.image-4 div:last-child{
+    position: absolute;
+    width: 100%;
+    background-color: #272727;
+    bottom: 0;
+    padding: 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*-------- chinh mau cho paragraphs---------*/
+.image-1 p,
+.image-2 p,
+.image-3 p,
+.image-4 p {
+    color: white;
+    font-size: 70%;
+}
+.image-1 img,
+.image-2 img,
+.image-3 img,
+.image-4 img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*----- don tiep section-----*/
+.don-tiep-section {
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-box, .in4-box {
+    width: 45%;
+    /*text-align: justify;*/
+}
+.in4-box {
+}
+.btn a {
+    padding: 10px;
+    font-size: 80%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.btn a:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+.help-box h2 {
+    margin-bottom: 30px;
+}
+.in4-box p {
+    font-size: 80%;
+}
+
+/*---- style cho support section------*/
+.support-section {
+    background-color: rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+
+}
+.container {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+h5 {
+    font-size: 75%;
+}
+.list-of-things li a {
+    font-size: 70%;
+    color: black;
+}
+.list-of-things li {
+    padding: 10px 0;
+}
+.list-of-things li a:hover {
+    text-decoration: underline;
+}
+
+/*---- style cho footer section-----*/
+.footer-section {
+    background-color: rgba(0,0,0,0.05);
+}
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.copy-right {
+    padding: 20px 0;
+    font-size: 70%;
+    display: flex;
+}
+.copy-right a {
+    margin: 0 10px;
+    color: rgba(0,0,0,0.6);
+}
+.copy-right a:hover {
+    text-decoration: underline;
+}
+.copy-right p {
+    margin-right: 10px;
+}
+.last-group-icons i, span {
+    color: black;
+    font-size: 70%;
+    padding: 20px 0;
+    margin: 0 10px;
+}
+.last-group-icons span {
+    text-decoration: underline;
+}

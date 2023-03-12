@@ -1,0 +1,127 @@
+
+
+@media only screen and (max-width: 1439px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1126px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .trai-nghiem-and-kham-pha {
+        flex-direction: column;
+    }
+
+    .trai-nghiem-and-kham-pha div:first-child {
+        width: 100%;
+    }
+
+    .trai-nghiem-and-kham-pha a {
+        float: left;
+    }
+
+    .trai-nghiem-and-kham-pha div:last-child {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .list-of-things {
+        /*width: 100%;*/
+        margin: 15px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .container div:last-child .list-of-things {
+        border-bottom: none;
+    }
+
+    .list-of-things li {
+        display: inline-flex;
+        width: 32.5%;
+        margin: 5px 0;
+    }
+}
+    .list-of-things li:last-child {
+        margin-bottom: 20px;
+    }
+    .container-2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .copy-right {
+        flex-direction: column;
+        text-align: center;
+    }
+    .last-group-icons {
+        margin: 0 auto;
+    }
+    .copy-right p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+@media only screen and (max-width: 900px) {
+    .logo, .icon-on-navigation-bar, .hop-tim-kiem, .navigation-bar {
+        visibility: hidden;
+    }
+    .hop-tim-kiem-thay-the {
+        display: block;
+    }
+    .main-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-heading h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .main-heading a {
+        padding: 10px 30px;
+    }
+    .hero-section {
+        flex-direction: column;
+        display: flex;
+    }
+    .help-box, .in4-box {
+        width: 100%;
+    }
+    .in4-box {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .list-of-things {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        width: 80%;
+    }
+    .list-of-things li {
+        width: 100%;
+        margin: 3px 0;
+    }
+    .last-group-icons {
+        margin: 0;
+    }
+    .copy-right p {
+        text-align: left;
+        padding-left: 10px;
+    }
+    .copy-right {
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+}
